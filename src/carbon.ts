@@ -135,6 +135,7 @@ export function activate(context: ExtensionContext) {
       url.searchParams.set("wm", settings.get("showWatermark"));
       url.searchParams.set("ts", settings.get("timestamp"));
       url.searchParams.set("es", settings.get("exportSize"));
+      url.searchParams.set("width", settings.get("width"));
       url.searchParams.set("code", encodeURIComponent(selection));
     }
 
